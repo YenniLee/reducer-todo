@@ -40,10 +40,8 @@ export default function TodoForm({ dispatch }) {
         />
         <div className="btn-container">
           <button 
-            className="btn-container__btn btn-container__btn--add" 
             onClick={addTodo}>Add Todo</button>
           <button 
-            className="btn-container__btn btn-container__btn--clear"
             onClick={clearCompleted}>Clear Completed</button>
         </div>
       </form>
