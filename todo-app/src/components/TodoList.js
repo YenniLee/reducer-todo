@@ -8,14 +8,16 @@ export default function TodoList() {
   const [ state, dispatch ] = useReducer(todoReducer, initialState);
 
   return (
-    <div className="todolist">
-    <TodoForm dispatch={dispatch} />
-      {
-        state.map((todo) => {
-          return <Todo todo={todo} key={todo.id} dispatch={dispatch} />
-        })
-      }
-      
+    <div className='input'>
+        <TodoForm dispatch={dispatch} />
+        <div className="todolist">
+        {
+            state.map((todo) => {
+            return <Todo todo={todo} key={todo.id} dispatch={dispatch} />
+            })
+        }
+        
+        </div>
     </div>
   );
 }

@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 export default function TodoForm({ dispatch }) {
   const [ newTodoText, setNewTodoText ] = useState('');
 
-  const handleChanges = (e) => {
+  const handleChanges = e => {
     setNewTodoText(e.target.value);
   };
 
-  const addTodo = (e) => {
+  const addTodo = e => {
     e.preventDefault();
     setNewTodoText('');
     dispatch(
@@ -18,7 +18,7 @@ export default function TodoForm({ dispatch }) {
     setNewTodoText('');
   };
 
-  const clearCompleted = (e) => {
+  const clearCompleted = e => {
     e.preventDefault();
     dispatch(
       {
