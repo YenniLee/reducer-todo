@@ -8,5 +8,5 @@
       "config": { "distDir": "build" }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "nasa-photo-of-the-day/$1" }]
+  "routes": [{ "src": "/(.*)", "dest": "todo-app/$1" }]
 }
