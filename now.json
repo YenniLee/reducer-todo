@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "name": "nasa-photo-of-the-day",
+  "name": "todo-app",
   "builds": [
     {
-      "src": "nasa-photo-of-the-day/package.json",
+      "src": "todo-app/package.json",
       "use": "@now/static-build",
       "config": { "distDir": "build" }
     }
