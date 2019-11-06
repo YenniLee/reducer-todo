@@ -1,15 +1,15 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import './App.css';
 
 //components 
 import TodoList from './components/TodoList';
 
 
-function App({ dispatch }) {
+function App() {
 
   return (
     <div className="App">
-    <h1>My Todos List</h1>
+    <h1>My Todo List</h1>
     <TodoList />
     </div>
   );

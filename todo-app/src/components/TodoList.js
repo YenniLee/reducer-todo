@@ -6,7 +6,8 @@ import { todoReducer, initialState } from '../reducers/reducers';
 
 export default function TodoList() {
   const [ state, dispatch ] = useReducer(todoReducer, initialState);
-
+  // console.log('state:', state)
+  
   return (
     <div className='input'>
         <TodoForm dispatch={dispatch} />
