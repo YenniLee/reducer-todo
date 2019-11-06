@@ -1,7 +1,7 @@
 export const initialState = [
     {
         item: 'Learn about reducers',
-        completed: false, 
+        completed: true, 
         id: 3892987589
     },
     {
@@ -24,7 +24,7 @@ export const todoReducer = (state, action) => {
       ]
     case('TOGGLE_COMPLETED'):
       return (  
-        state.map( (todo) =>{
+        state.map((todo) =>{
           if( todo.id === action.payload ) {
             return { ...todo, completed: !todo.completed }
           }
